@@ -4,8 +4,10 @@ class User < ApplicationRecord
     has_secure_password
 
     def mood
-        happiness > nausea ? "happy" : "sad"
-    end
+        unless admin
+          happiness > nausea ? "happy" : "sad"
+        end
+      end
 
 end
 

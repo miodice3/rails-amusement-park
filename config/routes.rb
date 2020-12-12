@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/signin', to: 'session#new', as: 'signin'
+  #get '/signin', to: 'session#new', as: 'signin'
   get '/users/new', to: 'users#new', as: 'new_user'
   root 'static#home'
   get '/users', to:'users#index', as: 'users'
@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/users/:id', to: 'users#show', as: 'user'
   get '/users/:id/edit', to: 'users#edit', as: 'edit_user'
   get '/attractions', to: 'attractions#index', as: 'attractions'
-  #get '/signin', to: 'session#new', as: 'signin'
+  get '/signin', to: 'session#new', as: 'signin'
   post '/session', to: 'session#create', as: 'session'
   delete '/session/', to: 'session#destroy'
   get '/attractions/new', to: 'attractions#new', as: 'new_attraction'
