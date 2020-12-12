@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2020_12_11_181858) do
     t.integer "min_height"
     t.integer "nausea_rating"
     t.integer "happiness_rating"
-    t.integer "ticket_number"
+    t.integer "tickets"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
