@@ -5,7 +5,7 @@ class RidesController < ApplicationController
         ride = Ride.create(ride_params)
 #        ride.user_id = current_user.id
         #ride.save
-        byebug
+        #byebug
         message = ride.take_ride
         redirect_to user_path(ride.user.id), flash: { message: message }
     end
